@@ -34,6 +34,12 @@ soup.find_all(id=True)
 #String find
 soup.find_all(string='Iphone')
 
+#Strings in list
+soup.find_all(string= ['Nokia 123','Iphone'])
 
 #string find using re
 soup.find_all(string=re.compile('Iph'))
+
+#pull the first 3 results
+soup.find_all('p',class_ = re.compile('pull'), limit=3)
+
